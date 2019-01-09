@@ -19,6 +19,7 @@ import org.lasarobotics.hazylib.HazyIterative;
 public class Robot extends HazyIterative {
     @Override
     public void robotInit() {
-        System.out.println("ayy lmao");
+        System.out.println("ayy lmao it do tho");
+		System.out.println("but does it really??");
     }
 }

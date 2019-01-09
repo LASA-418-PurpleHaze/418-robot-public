@@ -1,0 +1,94 @@
+plugins {
+    id "java"
+    id "jaci.gradle.EmbeddedTools" version "2018.12.18"
+}
+
+def ROBOT_MAIN_CLASS = "frc.robot.Main"
+
+// Define my targets (RoboRIO) and artifacts (deployable files)
+// This is added by GradleRIO's backing project EmbeddedTools.
+deploy {
+    targets {
+		target('hazyroboriolibs') {
+			directory = '/usr/local/frc/third-party/lib'
+			
+			locations {
+				ssh {
+					address = "172.22.11.2"
+					user = "admin"
+				}
+				ssh {
+					address = "10.4.18.2"
+					user = "admin"
+				}
+			}
+			failOnMissing = true
+			maxChannels = 6
+		}
+        target('hazyroboriocode') {
+			directory = 'home/lvuser'
+			
+			locations {
+				ssh {
+					address = "172.22.11.2"
+					user = "admin"
+				}
+				ssh {
+					address = "10.4.18.2"
+					user = "admin"
+				}
+			}
+			failOnMissing = true
+			maxChannels = 6
+		}
+		
+    }
+    artifacts {
+		commandArtifact('startcommand') {
+			targets << 'hazyroboriocode'
+			predeploy << { execute "echo '/usr/local/frc/JRE/bin/java -Djava.library.path=/usr/local/frc/third-party/lib/ -jar /home/lvuser/418-robot-private.jar ' > /home/lvuser/robotCommand" }
+			postdeploy << { execute 'chmod 777 /home/lvuser/robotCommand; chown lvuser /home/lvuser/robotCommand' }
+		}
+		fileTreeArtifact('robotlibs') {
+			targets << 'hazyroboriolibs'
+			files = fileTree('lib/athena/native')
+			postdeploy << { execute 'chmod 777 *.so' }
+		}
+		fileArtifact('robotcode') {
+			targets << 'hazyroboriocode'
+			file = file('build/libs/418-robot-private.jar')
+			filename = '/home/lvuser/418-robot-private.jar'
+			predeploy << { execute '. /etc/profile.d/natinst-path.sh; /usr/local/frc/bin/frcKillRobot.sh -t 2> /dev/null' }
+			postdeploy << { execute 'chmod 777 /home/lvuser/418-robot-private.jar; chown lvuser /home/lvuser/418-robot-private.jar; sync; . /etc/profile.d/natinst-path.sh; /usr/local/frc/bin/frcKillRobot.sh -t -r 2> /dev/null' }
+		}
+    }
+}
+
+task deploylibs {
+	dependsOn deployRobotlibsHazyroboriolibs
+	doLast {
+		println "sent over binaries"
+	}
+}
+
+task go {
+	dependsOn build
+	dependsOn deployRobotlibsHazyroboriolibs
+	dependsOn deployStartcommandHazyroboriocode
+	dependsOn deployRobotcodeHazyroboriocode
+}
+	
+sourceSets {
+	main {
+		java {
+			srcDirs = ['c2019/roborio', 'hazylib_roborio']
+		}
+	}
+}
+
+jar {
+	manifest {
+        attributes 'Manifest-Version': '1.0',
+                   'Main-Class': 'org.lasarobotics.frc2019.Main'
+    }
+}
