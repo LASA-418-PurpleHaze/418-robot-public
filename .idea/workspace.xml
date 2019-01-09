@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6592624-fdff-44de-9f56-85137ab46656" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/418-robot-private.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/AccelerometerJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/AccumulatorResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/AllianceStationID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/AnalogGyroJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/AnalogJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/CANAPIJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/CANData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/CompressorJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/ConstantsJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/ControlWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/CounterJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/DIOJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/DigitalGlitchFilterJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/EncoderJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/FRCNetComm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/HAL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/HALUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/I2CJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/InterruptJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/JNIWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/MatchInfoData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/NotifierJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/PDPJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/PWMConfigDataResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/PWMJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/PortsJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/PowerJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/RelayJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/SPIJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/SerialPortJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/SolenoidJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/ThreadsJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANExceptionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANInvalidBufferException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANMessageNotAllowedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANMessageNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANNotInitializedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/can/CANStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/communication/NIRioStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/util/AllocationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/util/BoundaryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/util/CheckedAllocationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/util/HalHandleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/util/UncleanStatusException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/ConnectionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/ConnectionNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/EntryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/EntryListenerFlags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/EntryNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/LogMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/NetworkTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/NetworkTableEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/NetworkTableInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/NetworkTableType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/NetworkTableValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/NetworkTablesJNI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/PersistentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/RpcAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/RpcCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/TableEntryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/networktables/TableListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/DriverStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/MotorSafety.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/RobotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/Timer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/Watchdog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpiutil/RuntimeDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpiutil/RuntimeLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazylib/HazyIterative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazylib/HazyRobotBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/athena/native/libwpiHald.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/athena/native/libwpiHaljni.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/athena/native/libwpiutild.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/5.12.0/api-cpp-5.12.0-headers.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/5.12.0/api-cpp-5.12.0-linuxathenastatic.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/5.12.0/api-cpp-5.12.0-linuxathenastaticdebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/5.12.0/api-cpp-5.12.0-linuxx86-64static.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/5.12.0/api-cpp-5.12.0-linuxx86-64staticdebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/5.12.0/api-cpp-5.12.0.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-cpp/maven-metadata.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-java/5.12.0/api-java-5.12.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-java/5.12.0/api-java-5.12.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-java/5.12.0/api-java-5.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-java/5.12.0/api-java-5.12.0.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/api-java/maven-metadata.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-headers.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxathena.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxathenadebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxathenastatic.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxathenastaticdebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxx86-64.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxx86-64debug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxx86-64static.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0-linuxx86-64staticdebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/5.12.0/cci-5.12.0.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/cci/maven-metadata.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/core/5.12.0/core-5.12.0-headers.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/core/5.12.0/core-5.12.0.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/core/maven-metadata.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/5.12.0/wpiapi-cpp-5.12.0-headers.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/5.12.0/wpiapi-cpp-5.12.0-linuxathenastatic.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/5.12.0/wpiapi-cpp-5.12.0-linuxathenastaticdebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/5.12.0/wpiapi-cpp-5.12.0-linuxx86-64static.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/5.12.0/wpiapi-cpp-5.12.0-linuxx86-64staticdebug.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/5.12.0/wpiapi-cpp-5.12.0.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-cpp/maven-metadata.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-java/5.12.0/wpiapi-java-5.12.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-java/5.12.0/wpiapi-java-5.12.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-java/5.12.0/wpiapi-java-5.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-java/5.12.0/wpiapi-java-5.12.0.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/phoenix/wpiapi-java/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jetson_hazylib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/hazylib_jetson/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roborio_hazylib/README.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5744681">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/build.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Robot.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Robot.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#976#977#0" expanded="true" />
+                    <element signature="e#1009#1010#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="build.properties" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/build.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="561">
+                  <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../allwpilib" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazyib/HazyIterative.java" />
+        <option value="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/util/WPILibVersion.java" />
+        <option value="$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazyib/HazyRobotBase.java" />
+        <option value="$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Main.java" />
+        <option value="$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazylib/HazyIterative.java" />
+        <option value="$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazylib/HazyRobotBase.java" />
+        <option value="$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/MotorSafety.java" />
+        <option value="$PROJECT_DIR$/../FRC2018/build.xml" />
+        <option value="$PROJECT_DIR$/build.properties" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Robot.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1734" />
+    <option name="height" value="1417" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="418-robot-private" type="b2602c69:ProjectViewProjectNode" />
+              <item name="418-robot-private" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="418-robot-private" type="b2602c69:ProjectViewProjectNode" />
+              <item name="418-robot-private" type="462c0819:PsiDirectoryNode" />
+              <item name="c2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="418-robot-private" type="b2602c69:ProjectViewProjectNode" />
+              <item name="418-robot-private" type="462c0819:PsiDirectoryNode" />
+              <item name="c2019" type="462c0819:PsiDirectoryNode" />
+              <item name="roborio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="418-robot-private" type="b2602c69:ProjectViewProjectNode" />
+              <item name="418-robot-private" type="462c0819:PsiDirectoryNode" />
+              <item name="c2019" type="462c0819:PsiDirectoryNode" />
+              <item name="roborio" type="462c0819:PsiDirectoryNode" />
+              <item name="frc2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="418-robot-private" type="b2602c69:ProjectViewProjectNode" />
+              <item name="418-robot-private" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="418-robot-private" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="robotbuild" type="AntRunConfiguration" factoryName="Ant Target" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6592624-fdff-44de-9f56-85137ab46656" name="Default" comment="" />
+      <created>1547014661371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547014661371</updated>
+      <workItem from="1547014662740" duration="3945000" />
+      <workItem from="1547018631578" duration="965000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4910000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1734" height="1417" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.34792808" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19266589" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.15075669" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <targetFilters>
+        <filter targetName="clean" isVisible="true" />
+        <filter targetName="compile" isVisible="true" />
+        <filter targetName="jar" isVisible="false" />
+        <filter targetName="copy_config" isVisible="false" />
+        <filter targetName="deploy" isVisible="true" />
+        <filter targetName="dependencies" isVisible="false" />
+      </targetFilters>
+      <expanded value="true" />
+    </buildFile>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FRC2018/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FRC2018/build.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpiutil/RuntimeLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpiutil/RuntimeDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/HALUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/util/WPILibVersion.java" />
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/hal/FRCNetComm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1421">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/Watchdog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3104">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazyib/HazyIterative.java" />
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazyib/HazyRobotBase.java" />
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazylib/HazyRobotBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/org/lasarobotics/hazylib/HazyIterative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#1065#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/DriverStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="1137" column="7" lean-forward="true" selection-start-line="1137" selection-start-column="7" selection-end-line="1137" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hazylib_roborio/edu/wpi/first/wpilibj/MotorSafety.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="117" column="3" lean-forward="true" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FRC2017/build.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FRC2017/hazybuild/build.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FRC2018/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FRC2018/build.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c2019/roborio/org/lasarobotics/frc2019/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>418-robot-private</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

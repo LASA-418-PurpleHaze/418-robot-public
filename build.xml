@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="athena-project-build"
+         default="deploy">
+
+    <!-- properties-->
+    <property file="build.properties"/>
+
+    <!-- Load Tasks -->
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="ant-contrib.jar"/>
+        </classpath>
+    </taskdef>
+    <taskdef resource="net/jtools/classloadertask/antlib.xml"
+             classpath="ant-classloadertask.jar"/>
+
+
+    <target name="clean"
+            description="Clean up all build and distribution artifacts.">
+
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <!-- Targets -->
+    <target name="compile"
+            description="Compile the source code.">
+        <mkdir dir="${build.dir}"/>
+        <path id="classpath.path">
+            <fileset dir="lib"
+                     includes="*.plsfixmelater"
+                     excludes="*-sources.jar,*-javadoc.jar"/>
+        </path>
+        <pathconvert property="classpathProp"
+                     refid="classpath.path"/>
+        <echo message="[athena-compile] Compiling ${src.dir} with classpath=${classpathProp} to ${build.dir}"/>
+        <javac destdir="${build.dir}"
+               includeAntRuntime="no"
+               includeJavaRuntime="no"
+               classpathref="classpath.path"
+               target="${ant.java.version}"
+               source="${ant.java.version}"
+               compiler="javac${ant.java.version}"
+               debug="true">
+            <src path="c2019/roborio"/>
+            <src path="hazylib_roborio"/>
+        </javac>
+    </target>
+
+
+    <target name="jar"
+            depends="compile">
+        <echo message="[athena-jar] Making jar ${dist.jar}."/>
+        <mkdir dir="${dist.dir}"/>
+        <mkdir dir="${build.jars}"/>
+        <echo message="[athena-jar] Copying jars to ${build.jars}."/>
+        <copy todir="${build.jars}"
+              flatten="true">
+            <path refid="classpath.path"/>
+        </copy>
+        <jar destfile="${dist.jar}"
+             update="false">
+            <manifest>
+                <attribute name="Manifest-Version"
+                           value="1.0"/>
+                <attribute name="Main-Class"
+                           value="org.lasarobotics.frc2019.Main"/>
+            </manifest>
+            <fileset dir="${build.dir}"
+                     includes="**/*.class"/>
+        </jar>
+    </target>
+
+    <!-- We're running a clean here to get around a known ant issue where it does not detected changed constant variables.
+    To get around this, we're recompiling the entire project, which is not an issue for most teams. If this is an issue
+    for you, you can remove the clean here, just be sure to do a full rebuild after you've changed any constants.
+    Reference: http://stackoverflow.com/questions/6430001/ant-doesnt-recompile-constants -->
+    <target name="deploy"
+            depends="clean,jar"
+            description="Deploy the jar and start the program running.">
+
+        <echo message="[athena-deploy] Copying code over."/>
+
+        <echo message="[athena-deploy] Starting program."/>
+    </target>
+
+</project>
