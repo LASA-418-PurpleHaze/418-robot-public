@@ -61,6 +61,12 @@ deploy {
 			predeploy << { execute '. /etc/profile.d/natinst-path.sh; /usr/local/frc/bin/frcKillRobot.sh -t 2> /dev/null' }
 			postdeploy << { execute 'chmod 777 /home/lvuser/418-robot-private.jar; chown lvuser /home/lvuser/418-robot-private.jar; sync; . /etc/profile.d/natinst-path.sh; /usr/local/frc/bin/frcKillRobot.sh -t -r 2> /dev/null' }
 		}
+		fileArtifact('jre') {
+			targets << 'hazyroboriolibs'
+			file = file('lib/jre/jre.ipk')
+			filename = '/home/lvuser/jre.ipk'
+			postdeploy << { execute "sed -i -e 's/^StartupDLLs/;StartupDLLs/' /etc/natinst/share/ni-rt.ini; opkg remove zulu-jre\\*; opkg install /home/lvuser/jre.ipk; rm /home/lvuser/jre.ipk" }
+		}
     }
 }
 
